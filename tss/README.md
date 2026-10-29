@@ -6,13 +6,7 @@ API REST (Spring Boot 3 · Java 17 · PostgreSQL/Neon) con **dos módulos indepe
 ## Ejecutar
 
 1. Java 17+ y Maven instalados.
-2. La contraseña de la base **no está en el código**. Define la variable de entorno `DB_PASSWORD`:
-   - Windows (PowerShell): `$env:DB_PASSWORD="tu-password"; mvn spring-boot:run`
-   - Linux/Mac: `DB_PASSWORD=tu-password mvn spring-boot:run`
-   - IntelliJ: Run → Edit Configurations → Environment variables → `DB_PASSWORD=...`
-   - Si cambias de base: `DB_URL`, `DB_USER` y `DB_PASSWORD`.
-3. Hibernate crea las tablas `titulados` y `empleadores` solo (`ddl-auto=update`).
-4. Probar sin datos reales: `POST /api/titulados/demo?cantidad=80` y luego `GET /api/titulados/estadisticas/informe`.
+2. Probar sin datos reales: `POST /api/titulados/demo?cantidad=80` y luego `GET /api/titulados/estadisticas/informe`.
    Los datos demo llevan `origenDato=DEMO` y se borran con `DELETE /api/titulados/demo`.
 
 ## Front
