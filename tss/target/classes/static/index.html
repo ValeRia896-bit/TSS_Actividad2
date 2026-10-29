@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Estudio de mercado · Ingeniería de Sistemas</title>
+  <link rel="stylesheet" href="css/app.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+<body>
+<header class="top">
+  <div class="marca">
+    <h1>Estudio de mercado · Ing. de Sistemas</h1>
+    <span class="sub">Titulados y empleadores · UMSS</span>
+  </div>
+  <div class="modulos" id="modulos">
+    <button data-m="titulados" class="activo">Titulados <b id="cnt-titulados">·</b></button>
+    <button data-m="empleadores">Empleadores <b id="cnt-empleadores">·</b></button>
+  </div>
+  <div class="live" id="live" title="Conexión en tiempo real"><i></i><span>conectando…</span></div>
+</header>
+<nav class="tabs" id="tabs"></nav>
+<main id="vista"></main>
+<script src="js/core.js"></script>
+<script src="js/charts.js"></script>
+<script src="js/vistas.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
